@@ -16,6 +16,32 @@ fun main() {
     println("Nro Conta: $numeroConta")
     println("Saldo: R$$saldo")
 
+    //testaStatusConta(saldo)
+
+    // printa 0, 1, 2
+    for (i in 0 until 3) {
+        println(i)
+    }
+
+    // printa 0, 1, 2, 3
+    for (i in 0 .. 3) {
+        println(i)
+    }
+
+    // printa 3, 2, 1, 0
+    for (i in 3 downTo 0) {
+        println(i)
+    }
+
+    var i = 0
+    while (i < 5) {
+        println("oi")
+        i++
+    }
+
+}
+
+fun testaStatusConta(saldo: Double) {
     if (saldo > 0.0) {
         println("Conta positiva!")
     } else if (saldo == 0.0) {
